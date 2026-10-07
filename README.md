@@ -2,6 +2,10 @@
 
 MCP local pequeño para buscar con DuckDuckGo y leer páginas públicas desde LM Studio. Python 3.11+, transporte **stdio**, sin puertos, API keys, Docker, bases de datos ni procesos auxiliares permanentes. Pensado para modelos pequeños: dos herramientas, schemas simples y respuestas limitadas.
 
+## Instalación en Windows
+
+Consulta el [manual de instalación para Windows](docs/INSTALACION_WINDOWS.md): incluye requisitos, instalación con PowerShell o CMD, configuración de LM Studio, comprobaciones y solución de problemas. El ejemplo de configuración está en [examples/mcp.windows.json](examples/mcp.windows.json).
+
 ## Instalación en CachyOS / Arch Linux
 
 Instala Python y pip con el gestor del sistema si faltan (`sudo pacman -S python python-pip`). No uses `sudo pip`.
@@ -53,6 +57,8 @@ En la configuración MCP de LM Studio, agrega este contenido a `mcp.json` (integ
 ```
 
 También disponible en `examples/mcp.json`. Ajusta la ruta si instalaste en otro lugar. LM Studio inicia el proceso; no necesitas iniciarlo en otra terminal. Selecciona un modelo con soporte de llamadas a herramientas y habilita este MCP en el chat. La calidad de la elección de herramientas depende del modelo y su plantilla.
+
+En Windows, usa la ruta a `.venv/Scripts/python.exe` siguiendo el [manual de Windows](docs/INSTALACION_WINDOWS.md#4-configurar-lm-studio).
 
 Documentación de referencia: [MCP en LM Studio](https://lmstudio.ai/docs/app/mcp), [SDK oficial Python](https://github.com/modelcontextprotocol/python-sdk/tree/v1.x), [DDGS](https://github.com/deedy5/ddgs).
 
