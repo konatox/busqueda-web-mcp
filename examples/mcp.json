@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "busqueda-web": {
+      "command": "/home/konatox/dev/busqueda-web-mcp/.venv/bin/python",
+      "args": ["-m", "busqueda_web_mcp.server"]
+    }
+  }
+}

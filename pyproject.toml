@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "busqueda-web-mcp"
+version = "1.0.0"
+description = "Compact local stdio MCP for DuckDuckGo search and safe webpage reading"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["mcp>=1.12,<2", "httpx>=0.28,<0.29", "beautifulsoup4>=4.12,<5", "ddgs>=9,<10"]
+
+[project.scripts]
+busqueda-web-mcp = "busqueda_web_mcp.server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
